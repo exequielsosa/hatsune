@@ -5,6 +5,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -19,6 +20,15 @@ main {
   width: 100%;
   font-family: "Inter", sans-serif;
   margin-top: 120px;
+  align-items: center;
+}
+
+.inside-card {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .card h1 {
