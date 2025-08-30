@@ -13,10 +13,11 @@ main {
 }
 
 .card {
-  background: white;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Inter", sans-serif;
   margin-top: 120px;
 }
 
