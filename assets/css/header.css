@@ -1,12 +1,24 @@
-
-/* header.css */
 .header {
-  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  background: linear-gradient(135deg, #fbb6ce, #f4c2c2);
   padding: 16px 24px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin-left: 24px;
+  color: white;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7), -1px -1px 0 rgba(0, 0, 0, 0.7),
+    1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 .header .logo {
@@ -18,10 +30,21 @@
 .header .navigation a {
   color: white;
   text-decoration: none;
-  margin-right: 12px;
-  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7), -1px -1px 0 rgba(0, 0, 0, 0.7),
+    1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 .header .navigation a:hover {
-  text-decoration: underline;
+  border-radius: 6px;
+  background: #fbb6ce;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  display: flex;
+  gap: 8px;
 }
