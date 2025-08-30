@@ -1,0 +1,27 @@
+
+/* header.css */
+.header {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  padding: 16px 24px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .navigation a {
+  color: white;
+  text-decoration: none;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+.header .navigation a:hover {
+  text-decoration: underline;
+}
