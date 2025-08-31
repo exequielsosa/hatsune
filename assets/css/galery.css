@@ -1,0 +1,85 @@
+/* ===== Galería collage (sin JS) ===== */
+.gallery-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.gallery-title {
+  font-family: "Rubik", sans-serif;
+  font-size: clamp(24px, 3.6vw, 36px);
+  margin: 0 0 16px;
+  color: #111827;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.35), -1px -1px 0 rgba(0, 0, 0, 0.35),
+    1px -1px 0 rgba(0, 0, 0, 0.35), -1px 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* GRID responsivo: tarjetas en varias columnas sí o sí */
+.gallery-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Tarjeta base */
+.g-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.g-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+}
+
+.g-item figure {
+  margin: 0;
+}
+.g-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Caption */
+.g-item figcaption {
+  text-align: center;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  color: #0f172a;
+  background: linear-gradient(135deg, #fff, #ffe6ef);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px 12px;
+}
+
+/* —— “Onda” automática con distintos altos usando aspect-ratio —— */
+.g-item figure {
+  aspect-ratio: 4 / 3;
+} /* base */
+.g-item:nth-child(3n) figure {
+  aspect-ratio: 1 / 1;
+}
+.g-item:nth-child(4n) figure {
+  aspect-ratio: 16 / 9;
+}
+.g-item:nth-child(5n) figure {
+  aspect-ratio: 3 / 4;
+}
+
+/* Seguridad */
+.gallery-wrap,
+.gallery-grid,
+.g-item,
+.g-item figure {
+  max-width: 100%;
+}
