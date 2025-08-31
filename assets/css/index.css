@@ -44,3 +44,35 @@
 .link:hover {
   text-decoration: underline;
 }
+
+.video-block {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.video-block h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 3vw, 28px);
+  margin: 0 0 12px;
+  color: #111827;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  background: #000;
+}
+
+.video-caption {
+  font-size: 14px;
+  color: #374151;
+  text-align: center;
+  margin-top: 8px;
+}
