@@ -81,3 +81,14 @@
 .g-item figure {
   max-width: 100%;
 }
+.teto-img {
+  max-height: 300px;  /* Ajusta este valor según lo grande o pequeña que quieras la imagen */
+  width: auto;        /* Mantiene la proporción */
+  object-fit: cover;  /* Recorta si hace falta para que encaje */
+}
+.neru-img {
+  max-height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+
